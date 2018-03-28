@@ -4,8 +4,10 @@
   "license": "ISC",
   "author": "Buster Collings <busterc@gmail.com> (https://about.me/buster)",
   "repository": "busterc/generator-prettier-package-json",
-  "version": "0.0.0",
-  "files": ["generators"],
+  "version": "1.0.0",
+  "files": [
+    "generators"
+  ],
   "scripts": {
     "precommit": "lint-staged",
     "prepublish": "nsp check",
@@ -29,9 +31,19 @@
     "prettier": "^1.7.0",
     "prettier-package-json": "^1.5.1"
   },
-  "keywords": ["json", "package", "prettier", "pretty", "print", "yeoman-generator"],
+  "keywords": [
+    "json",
+    "package",
+    "prettier",
+    "pretty",
+    "print",
+    "yeoman-generator"
+  ],
   "eslintConfig": {
-    "extends": ["xo", "prettier"],
+    "extends": [
+      "xo",
+      "prettier"
+    ],
     "env": {
       "jest": true,
       "node": true
@@ -45,12 +57,24 @@
         }
       ]
     },
-    "plugins": ["prettier", "json"]
+    "plugins": [
+      "prettier",
+      "json"
+    ]
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"],
-    "*.json": ["prettier --write", "git add"],
-    "package.json": ["prettier-package-json --write", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ],
+    "package.json": [
+      "prettier-package-json --write",
+      "git add"
+    ]
   },
   "reveal": true
 }
